@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
+    color: #831337;
+}
+
+header {
+    color: #FFFFFF;
+    padding: 10px 0;
+    border-bottom: 4px solid #521126;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Example font family */
+    margin: 0;
+    padding: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 100px; /* Example max width for the logo image */
+    height: auto; /* Ensures image maintains aspect ratio */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90rem;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .container img {
+        width: 60px; 
+        height: auto; 
+        margin-right: 10px;    
+}
+
+.logo {
+    margin-right: 38rem;
+    font-size: 1.5em; 
+    font-weight: 700; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    padding: 10px 20px;
+    border: 1px solid #a71845; 
+    color: #a71845; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease-in-out; 
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Example hover effect */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 30px;
+}
+
+nav a {
+    color: #521126;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #cb265a;
+}
+
+.welcome-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Styles for the welcome section */
+
+.welcome {
+    min-height: 40vh;
+    position: relative; 
+    text-align: center;
+    padding: 100px 20px;
+    background: url(img/header.jpg) center 28% / cover no-repeat;
+}
+
+.welcome-logo {
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    width: 100px; 
+}
+
+.meat-heading {
+    position: absolute;
+    bottom: 20px; 
+    left: 20px; 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 2em; 
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px 20px; 
+    color: #e3e3e3;
+}
+
+/* ABOUT */
+
+.about {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+}
+
+.about .container {
+    max-width: 120rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    letter-spacing: 1rem;
+}
+
+.about-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 80rem;
+    min-height: 20rem;
+}
+
+.about-wrap .about-left {
+    width: 33rem;
+    height: 20rem;
+    background: url(img/meat-section.png) center / cover no-repeat;
+    background-size: 70%;
+}
+
+.about-wrap .about-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 33rem;
+    height: 20rem;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* Trovaci */
+
+.find-us {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.find-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    letter-spacing: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.map-container {
+    text-align: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* SOCIAL MEDIA */
+
+.social-bar {
+    position: fixed;
+    top: 50%; 
+    transform: translateY(-50%);
+    right: 20px; 
+    background-color: rgba(255, 255, 255, 0.6); 
+    border-radius: 2px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Remove default list styles and style list items */
+.social-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style individual social media icons */
+.social-bar ul li {
+    margin-bottom: 10px; /* Adjust spacing between icons */
+}
+
+.social-bar ul li a {
+    display: block;
+    width: 40px; /* Adjust width of the icons */
+    height: 40px; /* Adjust height of the icons */
+    border-radius: 20%; /* Makes icons circular */
+    overflow: hidden;
+}
+
+.social-bar ul li a img {
+    width: 100%;
+    height: auto;
+}
+
+/* Optional: Hover effects */
+.social-bar ul li a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .welcome h1 {
+        font-size: 36px;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
